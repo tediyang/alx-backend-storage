@@ -5,6 +5,7 @@ DROP PROCEDURE IF EXISTS ComputeAverageWeightedScoreForUsers;
 DELIMITER //
 CREATE PROCEDURE ComputeAverageWeightedScoreForUsers ()
 BEGIN
+  -- ALX MYSQL version doesn't support WITH
   -- WITH t1 AS (
   --   SELECT SUM(p.weight * c.score) / SUM(p.weight) w, c.user_id FROM projects p
   --   JOIN corrections c
