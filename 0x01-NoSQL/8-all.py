@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
     using pymongo collection to fetch all the data from the databse
 """
