@@ -1,2 +1,2 @@
 // list database in mongo
-db
+show dbs
