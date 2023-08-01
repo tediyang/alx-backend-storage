@@ -2,6 +2,7 @@
 """ Setting up a class that writes to redis """
 import redis
 from uuid import uuid4
+from typing import Union
 
 
 class Cache:
@@ -15,7 +16,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
-    def store(self, data: str | float | bytes | int) -> str:
+    def store(self, data: Union[str, float, bytes, int]) -> str:
         """_summary_
 
         Args:
