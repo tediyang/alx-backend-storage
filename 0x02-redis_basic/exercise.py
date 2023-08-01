@@ -66,7 +66,6 @@ def replay(fn: Callable):
         print("{}(*{}) -> {}".format(function_name, input, output))
 
 
-
 class Cache:
     """
         A class Cache that writes and stores value in Redis
